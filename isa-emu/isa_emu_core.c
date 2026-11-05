@@ -7,7 +7,6 @@
 
 static inline u32 ld32(const u8 *p, int i)
 {
-	p += 4 * i;
 	return (u32)p[0] | (u32)p[1] << 8 | (u32)p[2] << 16 | (u32)p[3] << 24;
 }
 
